@@ -10,7 +10,7 @@ import (
 
 func TestNewSSLPinningOption(t *testing.T) {
 	pinner := NewSSLPinningOption()
-	err := pinner.AddPin("github.com", true, "sha256\\/3ftdeWqIAONye/CeEQuLGvtlw4MPnQmKgyPLugFbK8=")
+	err := pinner.AddPin("github.com", true, "sha256\\Gs+dT9kUC17nDYZXH52mKzGnlUU/Q5mS0UruTQW3H0U=")
 	require.NoError(t, err, "pinner.AddPin: errored unexpectedly.")
 
 	hClient, err := gokhttp.NewHTTPClient(pinner)
